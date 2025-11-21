@@ -1,0 +1,41 @@
+import sys
+from collections import deque
+
+input = sys.stdin.readline
+
+N = int(input().strip())
+q = deque()
+out = []
+
+for _ in range(N):
+    cmd = input().split()
+
+    if cmd[0] == 'push':
+        x = int(cmd[1])
+        q.append(x)
+
+    elif cmd[0] == 'pop':
+        if q:
+            out.append(str(q.popleft()))
+        else:
+            out.append('-1')
+
+    elif cmd[0] == 'size':
+        out.append(str(len(q)))
+
+    elif cmd[0] == 'empty':
+        out.append('1' if not q else '0')
+
+    elif cmd[0] == 'front':
+        if q:
+            out.append(str(q[0]))
+        else:
+            out.append('-1')
+
+    elif cmd[0] == 'back':
+        if q:
+            out.append(str(q[-1]))
+        else:
+            out.append('-1')
+
+print('\n'.join(out))
