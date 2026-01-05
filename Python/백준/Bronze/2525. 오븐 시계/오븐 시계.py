@@ -1,9 +1,9 @@
-h, m = map(int, input().split())
-t = int(input())
-m += t
+h, m = map(int,input().split())
+need = int(input())
+m += need
 if m >= 60 :
-    h = h + m//60
-    m = m % 60
-    if h >= 24 :
-        h = h % 24
+    h += (m//60)
+    if h > 23 :
+        h -= 24
+    m %= 60
 print(h,m)
