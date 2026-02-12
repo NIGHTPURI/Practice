@@ -1,8 +1,7 @@
-n, m = map(int,input().split())
-li = [0] * n
-for _ in range(m) :
-    a,b,c = map(int,input().split())
-    for i in range(a-1,b) :
-        li[i] = c
+N, M = map(int,input().split())
+li = [0]*N
+for _ in range(M) :
+    i, j, k = map(int,input().split())
+    for a in range(i-1,j):
+        li[a] = k
 print(*li)
-    
