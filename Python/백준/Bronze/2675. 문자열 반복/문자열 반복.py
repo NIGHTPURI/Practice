@@ -1,8 +1,8 @@
 T = int(input())
 for t in range(1,T+1) :
-    r, s = input().split()
-    p = ""
-    for ch in s:
-        p += ch*int(r)
-    print(p)
-
+    n, s = input().split()
+    result = ""
+    for i in range(len(s)) :
+        result += s[i]*int(n)
+    print(result)
+        
