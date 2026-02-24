@@ -1,12 +1,12 @@
-N, B = input().split()
-B = int(B)
+n, b = input().split()
+b = int(b)
 
-value = 0
-for ch in N :
+v = 0
+for ch in n :
     if '0' <= ch <= '9' :
-        digit = ord(ch) - ord('0')
+        d = ord(ch) - ord('0')
     else :
-        digit = ord(ch) - ord('A') + 10
-    value = value * B + digit
-    
-print(value)
+        d = ord(ch) - ord('A') + 10
+    v = v * b + d
+print(v)
+        
