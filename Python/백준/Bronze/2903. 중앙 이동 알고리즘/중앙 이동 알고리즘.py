@@ -1,7 +1,8 @@
-i = 2
+a = 2
 n = int(input())
 v = 0
-for _ in range(n) :
-    i = i+(i-1)
-    v = i**2
+for _ in range(n):
+    a = (2*a-1)
+    v = a**2
+
 print(v)
