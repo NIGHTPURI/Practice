@@ -1,11 +1,16 @@
-N = int(input())
-x = []
-y = []
-if N == 1 :
-    print("0")
-    exit()
-for _ in range(N) :
-    a, b = map(int,input().split())
-    x.append(a)
-    y.append(b)
-print((max(x)-min(x))*(max(y)-min(y)))
+import sys
+input = sys.stdin.readline
+
+T = int(input())
+xl = []
+yl = []
+
+for t in range(1, T + 1):
+    x, y = map(int, input().split())
+    xl.append(x)
+    yl.append(y)
+    
+if len(xl) <= 1: 
+    print(0)
+else:
+    print((max(xl) - min(xl)) * (max(yl) - min(yl)))
