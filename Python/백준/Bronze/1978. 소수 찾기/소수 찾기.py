@@ -1,20 +1,18 @@
-N = int(input())
+n = int(input())
 li = list(map(int,input().split()))
-
-def is_prime(x: int) -> bool :
-    if x < 2 :
-        return False
-    i=2
-    while i*i <= x :
-        if x%i == 0 :
-            return False
-        i += 1
-    return True
-
 cnt = 0
-for n in li :
-    if is_prime(n) :
+for k in li :
+    if k == 1 :
+        continue
+    is_true = True
+    i = 2
+    while i*i <= k :
+        if k%i == 0 :
+            is_true = False
+            break
+        i += 1
+    if is_true :
         cnt += 1
-
 print(cnt)
-    
+        
+        
