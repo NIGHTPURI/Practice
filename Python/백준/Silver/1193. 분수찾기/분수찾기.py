@@ -1,17 +1,18 @@
-X = int(input())
+n = int(input())
 
 k = 1
-while X > (k*(k+1))//2 :
+while n > (k*(k+1))//2 :
     k += 1
-
+    
 prev = (k*(k-1))//2
-idx = X-prev
+idx = n-prev
 
-if k%2 == 0 :
-    numerator = idx
-    denominator = k-idx+1
+if  k%2==0 :
+    a = idx
+    b = k-idx+1
 else :
-    numerator = k-idx+1
-    denominator = idx
-
-print(f"{numerator}/{denominator}")
+    a = k-idx+1
+    b = idx
+print(f"{a}/{b}")
+    
+    
