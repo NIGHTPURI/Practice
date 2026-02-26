@@ -1,11 +1,10 @@
 N = int(input())
-
-d=2
-while d*d <= N :
-    while N%d == 0 :
-        print(d)
-        N //= d
-    d += 1
-
+i=2
+while i*i <= N:
+    if N % i == 0 :
+        print(i)
+        N //= i
+        continue
+    i += 1
 if N > 1 :
     print(N)
