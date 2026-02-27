@@ -1,12 +1,11 @@
 import sys
-
 input = sys.stdin.readline
 
-N = int(input().strip())
-arr = list(map(int,input().split()))
+n = int(input().strip())
+li = list(map(int,input().split()))
 
-sorted_arr = sorted(set(arr))
+sort_li = sorted(set(li))
 
-coord = {v : idx for idx, v in enumerate(sorted_arr)}
+dic = {v : idx for idx, v in enumerate(sort_li)}
 
-print(" ".join(str(coord[x]) for x in arr))
+print(" ".join(str(dic[x]) for x in li))
