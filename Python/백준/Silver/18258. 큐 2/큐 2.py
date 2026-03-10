@@ -1,41 +1,37 @@
 import sys
+input = sys.stdin.readline
 from collections import deque
 
-input = sys.stdin.readline
-
 N = int(input().strip())
-q = deque()
+
+queue = deque()
 out = []
 
-for _ in range(N):
-    cmd = input().split()
-
-    if cmd[0] == 'push':
-        x = int(cmd[1])
-        q.append(x)
-
-    elif cmd[0] == 'pop':
-        if q:
-            out.append(str(q.popleft()))
-        else:
+for _ in range(N) :
+    cmd = list(input().split())
+    if cmd[0] == 'push' :
+        queue.append(cmd[1])
+    elif cmd[0] == 'pop' :
+        if queue :
+            out.append(queue.popleft())
+        else :
             out.append('-1')
-
-    elif cmd[0] == 'size':
-        out.append(str(len(q)))
-
-    elif cmd[0] == 'empty':
-        out.append('1' if not q else '0')
-
-    elif cmd[0] == 'front':
-        if q:
-            out.append(str(q[0]))
-        else:
+    elif cmd[0] == 'size' :
+        out.append(len(queue))
+    elif cmd[0] == 'empty' :
+        if not queue :
+            out.append('1')
+        else :
+            out.append('0')
+    elif cmd[0] == 'front' :
+        if queue :
+            out.append(queue[0])
+        else :
             out.append('-1')
-
-    elif cmd[0] == 'back':
-        if q:
-            out.append(str(q[-1]))
-        else:
+    elif cmd[0] == 'back' :
+        if queue :
+            out.append(queue[-1])
+        else :
             out.append('-1')
-
-print('\n'.join(out))
+print(*out, sep='\n')
+        
