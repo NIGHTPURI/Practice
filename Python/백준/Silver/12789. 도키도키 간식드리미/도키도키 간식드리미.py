@@ -2,25 +2,18 @@ import sys
 input = sys.stdin.readline
 
 N = int(input().strip())
-arr = list(map(int, input().split()))
-
 stack = []
-need = 1 
-
-for x in arr:
-    if x == need:
-        
-        need += 1
-    else:
-
-        stack.append(x)
-
-
-    while stack and stack[-1] == need:
+target = 1
+stu = list(map(int, input().split()))
+for i in stu :
+    stack.append(i)
+    while stack and stack[-1] == target :
         stack.pop()
-        need += 1
+        target += 1
 
-if need == N + 1:
-    print("Nice")
-else:
-    print("Sad")
+if not stack :
+    print('Nice')
+else :
+    print('Sad')
+    
+    
