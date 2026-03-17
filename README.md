@@ -1,2 +1,77 @@
-# Practice
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# Baekjoon Problem Solving Archive
+
+백준 알고리즘 문제 풀이를 기록하는 저장소입니다.  
+단순 정답 제출이 아니라 문제 해결 과정과 사고 흐름을 정리하는 것을 목표로 합니다.
+
+---
+
+## Purpose
+
+- 문제 해결 능력 향상
+- 시간복잡도 기반 사고
+- 자료구조 선택 능력 강화
+- 실패 원인 분석 및 개선
+
+---
+
+## Goal
+
+- 풀이를 설명할 수 있는 수준까지 이해
+- 유형별 접근 방식 정리
+- 실전 개발에 적용 가능한 사고력 확보
+
+---
+
+## Language
+
+- Python
+
+---
+
+## Directory Structure
+
+Python/  
+└─ 백준/  
+  ├─ Bronze/  
+  ├─ Silver/  
+  ├─ Gold/  
+  └─ ...
+
+---
+
+## How I Approach Problems
+
+- 완전탐색 가능 여부 판단
+- 입력 크기 기반 시간복잡도 검토
+- 자료구조 선택
+- 중복 연산 제거
+- 알고리즘 패턴 분류 (BFS, DFS, DP 등)
+
+---
+
+## Review 기준
+
+각 문제를 풀고 아래 내용을 점검합니다.
+
+- 접근 방식
+- 실패 원인
+- 해결 방법
+- 개선 포인트
+- 재사용 가능한 인사이트
+
+---
+
+## Retrospective
+
+- 처음 풀이가 최적해가 아닌 경우가 많았다
+- 시간복잡도 판단이 틀리면 대부분 실패했다
+- 자료구조 선택이 성능에 큰 영향을 줬다
+- 정답보다 "이유 설명"이 더 중요했다
+
+---
+
+## Improvement Plan
+
+- 유형별 문제 정리
+- 반복 실패 패턴 기록
+- 재풀이 및 리팩토링
