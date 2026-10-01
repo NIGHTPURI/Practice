@@ -3,7 +3,33 @@
 백준 알고리즘 문제 풀이를 기록하는 저장소입니다.  
 단순 정답 제출이 아니라 문제 해결 과정과 사고 흐름을 정리하는 것을 목표로 합니다.
 
----
+백준을 중심으로 SWEA 풀이도 함께 보관합니다. 서비스 프로젝트와 구분되는 Python 알고리즘 학습 기록입니다.
+
+## 풀이 둘러보기
+
+- [문제 목록](Python/백준): 문제별 Python 풀이와 원문 링크
+- [SWEA 풀이](Python/SWEA): SWEA 문제별 Python 풀이와 제출 기록
+- [집합으로 출입 상태 관리](Python/%EB%B0%B1%EC%A4%80/Silver/7785.%E2%80%85%ED%9A%8C%EC%82%AC%EC%97%90%E2%80%85%EC%9E%88%EB%8A%94%E2%80%85%EC%82%AC%EB%9E%8C/%ED%9A%8C%EC%82%AC%EC%97%90%E2%80%85%EC%9E%88%EB%8A%94%E2%80%85%EC%82%AC%EB%9E%8C.py): 입·퇴장 이벤트를 `set`에 반영하고 남은 이름을 역순 정렬합니다.
+- [스택으로 괄호 검증](Python/%EB%B0%B1%EC%A4%80/Silver/9012.%E2%80%85%EA%B4%84%ED%98%B8/%EA%B4%84%ED%98%B8.py): 닫는 괄호를 만났을 때의 짝과 마지막 스택 상태를 확인합니다.
+
+## 실행과 기록
+
+각 풀이는 표준 입력을 받는 독립 Python 프로그램입니다. 원문 문제의 입력 예제를 준비해 실행할 수 있습니다.
+
+```bash
+python3 "문제 폴더/풀이.py" < input.txt
+```
+
+문제별 README의 시간·메모리·제출일은 저장된 제출 기록입니다. 전체 풀이의 재채점이나 동일 환경에서의 성능 비교 결과를 의미하지 않습니다.
+
+2026-10-01 문서 정리에서는 링크와 소개한 코드의 대응만 확인했으며 **실행 검증 미수행**입니다.
+
+문제 원문은 [백준 온라인 저지](https://www.acmicpc.net/)에 있으며, [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub)로 기록한 문제 링크와 채점 메타데이터를 보존합니다. 풀이 코드와 플랫폼 문제 설명의 출처를 구분합니다.
+
+SWEA 문제는 [SW Expert Academy](https://swexpertacademy.com/)의 자료이며 개별 문제 README의 출처를 따릅니다.
+
+<details>
+<summary>학습 목표와 복습 기준</summary>
 
 ## Purpose
 
@@ -30,12 +56,14 @@
 
 ## Directory Structure
 
-Python/  
-└─ 백준/  
-  ├─ Bronze/  
-  ├─ Silver/  
-  ├─ Gold/  
-  └─ ...
+```text
+Python/
+├─ 백준/
+│  ├─ Bronze/
+│  ├─ Silver/
+│  └─ Gold/
+└─ SWEA/
+```
 
 ---
 
@@ -75,3 +103,5 @@ Python/
 - 유형별 문제 정리
 - 반복 실패 패턴 기록
 - 재풀이 및 리팩토링
+
+</details>
